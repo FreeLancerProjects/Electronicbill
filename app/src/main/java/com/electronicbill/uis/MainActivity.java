@@ -1,15 +1,15 @@
-package com.electronicbill;
+package com.electronicbill.uis;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import android.os.Bundle;
+
+import com.electronicbill.R;
 import com.electronicbill.databinding.ActivityMainBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     ActivityMainBinding binding;
-
-    // tab titles
     private String[] titles = new String[]{"Home", "Profile"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment createFragment(int position) {
             switch (position) {
                 case 0:
-                    return new HomeFragment();
+                    return HomeFragment.newInstance();
                 case 1:
                     return new ProfileFragment();
 

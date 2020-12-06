@@ -1,4 +1,4 @@
-package com.electronicbill;
+package com.electronicbill.uis;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -10,15 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import com.electronicbill.R;
 import com.electronicbill.databinding.FragmentProfileBinding;
 
 import androidmads.library.qrgenearator.QRGContents;
