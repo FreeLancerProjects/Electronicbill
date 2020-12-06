@@ -24,8 +24,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private Context context;
     private LayoutInflater inflater;
     private HomeFragment homeFragment;
-    private int selected_pos = -1;
-    private int old_pos = -1;
+    private int selected_pos = 0;
+    private int old_pos = 0;
     public CategoryAdapter(List<CategoryModel> list, Context context,HomeFragment homeFragment) {
         this.list = list;
         this.context = context;
